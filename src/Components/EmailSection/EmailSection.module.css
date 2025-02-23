@@ -1,0 +1,623 @@
+.Main {
+  width: 100%;
+  height: auto;
+  margin: 5% 0;
+}
+
+/*! STYLINF FOR CONTENT WRAPPER  */
+.ContentWrapper {
+  max-width: 1920px;
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+}
+
+/*! STYLING FOR CONTAINER  */
+.Container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background: var(--Gradient-Text);
+  padding: 0 2rem;
+  border-radius: 20px;
+  color: white;
+}
+
+.ImageContainer {
+  flex: 1;
+}
+
+.Image {
+  width: 100%;
+  height: auto;
+}
+
+.TextSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.TextSection h2 {
+  font-size: 3vw;
+  margin: 0;
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.TextSection h2 span {
+  color: white;
+  font-weight: 500;
+}
+
+.EmailInputGroup {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.EmailInput {
+  flex: 1;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: var(--small-screen-Navbar-Color);
+  font-weight: 500;
+}
+
+.HeroButton {
+  width: 28%;
+  background-color: var(--Main-BackgroundColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  padding: 0.9rem 1.2rem;
+  cursor: pointer;
+  transition: all 0.8s ease;
+ 
+  border: none;
+ 
+}
+
+.HeroButton a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 2;
+  font-size: 1rem;
+  color: var(--Heading-Text);
+  transition: color 0s ease;
+  font-family: "Actor", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.HeroButton:hover a {
+  color: var(--Span-Text);
+  font-weight: 500;
+}
+
+
+@media screen and (min-width: 1951px) {
+  .Main {
+    margin: 5% 0;
+  }
+
+  .TextSection h2 {
+    font-size: 5rem;
+  }
+
+  .EmailInputGroup {
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .EmailInput {
+    padding: 1.5rem 3rem;
+    font-size: 1.2rem;
+    border-radius: 3rem;
+  }
+
+  .HeroButton {
+    width: 25%;
+    padding: 1.2rem 2rem;
+    border-radius: 3rem;
+  }
+
+  .HeroButton a {
+    font-size: 1.2rem;
+    gap: 1rem;
+  }
+
+  .HeroButton img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 1950px) and (min-width: 1441px) {
+  .Main {
+    margin: 4% 0;
+  }
+
+  .TextSection h2 {
+    font-size: 3.5vw;
+  }
+
+  .EmailInputGroup {
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .EmailInput {
+    padding: 1.2rem 2.5rem;
+    font-size: 1.1rem;
+    border-radius: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .HeroButton {
+    width: 29%;
+    padding: 1rem 1.5rem;
+    border-radius: 2.5rem;
+  }
+
+  .HeroButton a {
+    font-size: 1.1rem;
+    gap: 0.75rem;
+  }
+
+  .HeroButton img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1069px) {
+  .Main {
+    margin: 4% 0;
+  }
+
+  .TextSection h2 {
+    font-size: 3.6vw; 
+  }
+
+  .Container {
+    padding: 0 1.4rem;
+  }
+
+  .EmailInputGroup {
+    gap: 1rem;
+    max-width: 100%;
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .EmailInput {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.35);
+  }
+
+  .HeroButton {
+    width: 32%;
+    padding: 0.9rem 1.2rem;
+    border-radius: 2rem;
+    min-width: 160px;
+  }
+
+  .HeroButton a {
+    font-size: 1rem;
+    gap: 0.5rem;
+  }
+
+  .HeroButton img {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* Adjusted hover effects */
+  .HeroButton:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Optional: Add input focus states */
+  .EmailInput:focus {
+    outline: 2px solid var(--Main-BackgroundColor);
+    background-color: rgba(255, 255, 255, 0.45);
+  }
+}
+
+@media (min-width: 834px) and (max-width: 1068px) {
+  .Main {
+    margin: 3% 0;
+  }
+
+  .TextSection h2 {
+    font-size: 3.6vw;
+  }
+
+  .Container {
+    padding: 0 1rem;
+  }
+
+  .EmailInputGroup {
+    gap: 0.8rem;
+    flex-wrap: nowrap;
+  }
+
+  .EmailInput {
+    flex: 2; 
+    padding: 0.9rem 1.8rem;
+    font-size: 0.95rem;
+    border-radius: 1.8rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 70%; 
+  }
+
+  .HeroButton {
+    width: 30%; 
+    padding: 0.8rem 1rem;
+    border-radius: 1.8rem;
+    min-width: 140px;
+  }
+
+  .HeroButton a {
+    font-size: 0.95rem;
+    gap: 0.4rem;
+  }
+
+  .HeroButton img {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* Adjusted hover effects */
+  .HeroButton:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  /* Input focus enhancement */
+  .EmailInput:focus {
+    outline: 2px solid var(--Main-BackgroundColor);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 833px) {
+  .Main {
+    margin: 4% 0;
+  }
+
+  .TextSection h2 {
+    font-size: 3.5vw; 
+   
+  }
+
+  .Container {
+    padding: 0 1.7rem;
+  }
+
+  .EmailInputGroup {
+    gap: 0.6rem;
+    flex-wrap: nowrap;
+  }
+
+  .EmailInput {
+    flex: 3; 
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    border-radius: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.45);
+    width: 75%; 
+    min-width: 180px; 
+  }
+
+  .HeroButton {
+    width: 25%; 
+    padding: 0.7rem 0.9rem;
+    border-radius: 1.5rem;
+    min-width: 120px;
+  }
+
+  .HeroButton a {
+    font-size: 0.8rem;
+    gap: 0.3rem;
+    justify-content: center;
+  }
+
+  .HeroButton img {
+    width: 14px;
+    height: 14px;
+  }
+
+  /* Subtler hover effects */
+  .HeroButton:hover {
+    transform: translateY(-0.5px);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  /* Enhanced focus states */
+  .EmailInput:focus {
+    outline: 2px solid var(--Main-BackgroundColor);
+    background-color: rgba(255, 255, 255, 0.55);
+  }
+
+  /* Touch optimization */
+  @media (pointer: coarse) {
+    .EmailInput {
+      padding: 1rem 1.8rem;
+    }
+    .HeroButton {
+      padding: 0.9rem 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Main {
+    margin: 10% 0;
+  }
+
+  .Container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .Container {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+
+  .TextSection h2 {
+    font-size: 7.4vw;
+  }
+
+  .EmailInputGroup {
+    flex-direction: column;
+  }
+
+  .EmailInput {
+    width: 90%;
+    text-align: center;
+  }
+  .HeroButton {
+    width: 80%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 734px) {
+  .Main {
+    margin: 10% 0;
+  }
+
+  .Container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .TextSection h2 {
+    font-size: 7vw; 
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .EmailInputGroup {
+    flex-direction: column;
+    gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .EmailInput {
+    width: 90%;
+    max-width: 400px;
+    padding: 1rem 2rem;
+    font-size: 0.95rem;
+    border-radius: 2rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .HeroButton {
+    width: 80%;
+    max-width: 400px;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    margin: 0 auto;
+  }
+
+  .HeroButton a {
+    font-size: 0.95rem;
+    justify-content: center;
+  }
+
+  .HeroButton img {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* Interaction states */
+  .EmailInput:focus {
+    background-color: rgba(255, 255, 255, 0.6);
+    outline: 1px solid var(--Main-BackgroundColor);
+  }
+
+  .HeroButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Touch device optimization */
+  @media (pointer: coarse) {
+    .EmailInput {
+      padding: 1.2rem 2rem;
+    }
+    .HeroButton {
+      padding: 1.2rem 2rem;
+    }
+  }
+
+  .EmailInput:invalid {
+    border: 2px solid #ff4444;
+    animation: gentleShake 0.4s ease;
+  }
+
+  @keyframes gentleShake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(3px);
+    }
+    75% {
+      transform: translateX(-3px);
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .Main {
+    margin: 10% 0;
+  }
+
+  .Container {
+    gap: 0;
+  }
+
+  .TextSection h2 {
+    font-size: 7vw; 
+    text-align: center;
+  }
+
+  .EmailInputGroup {
+    gap: 0.8rem;
+    width: 100%;
+  }
+
+  .EmailInput {
+    width: 80%;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    border-radius: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.55);
+  }
+
+  .HeroButton {
+    width: 63%;
+    padding: 0.8rem 1.5rem;
+    border-radius: 1.5rem;
+  }
+
+  .HeroButton a {
+    font-size: 0.75rem;
+    gap: 0.3rem;
+  }
+
+  .HeroButton img {
+    width: 14px;
+    height: 14px;
+  }
+
+  /* Interaction states */
+  .EmailInput:focus {
+    background-color: rgba(255, 255, 255, 0.65);
+    outline: 1px solid var(--Main-BackgroundColor);
+  }
+
+  .HeroButton:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Touch optimization */
+  @media (pointer: coarse) {
+    .EmailInput {
+      padding: 1rem 1.8rem;
+    }
+    .HeroButton {
+      padding: 1rem 1.8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .Main {
+    margin: 10% 0;
+  }
+
+  .Container {
+    gap: 0;
+  }
+
+  .TextSection h2 {
+    font-size: 7vw; 
+    text-align: center;
+  }
+
+  .EmailInputGroup {
+    gap: 0.8rem;
+    width: 100%;
+  }
+
+  .EmailInput {
+    width: 90%;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    border-radius: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.55);
+  }
+
+  .HeroButton {
+    width: 70%;
+    padding: 0.8rem 1.5rem;
+    border-radius: 1.5rem;
+  }
+
+  .HeroButton a {
+    font-size: 0.6rem;
+    gap: 0.3rem;
+  }
+
+  .HeroButton img {
+    width: 14px;
+    height: 14px;
+  }
+
+  /* Interaction states */
+  .EmailInput:focus {
+    background-color: rgba(255, 255, 255, 0.65);
+    outline: 1px solid var(--Main-BackgroundColor);
+  }
+
+  .HeroButton:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Touch optimization */
+  @media (pointer: coarse) {
+    .EmailInput {
+      padding: 1rem 1.8rem;
+    }
+    .HeroButton {
+      padding: 1rem 1.8rem;
+    }
+  }
+}

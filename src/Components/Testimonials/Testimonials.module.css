@@ -1,0 +1,651 @@
+.Main {
+  width: 100%;
+  height: auto;
+  margin: 5% 0;
+}
+
+/* Wrapper */
+.ContentWrapper {
+  max-width: 1920px;
+  width: 95%;
+  margin: 0 auto;
+  height: auto;
+}
+
+/* Main Container */
+.Container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: var(--Gradient-Text);
+  padding: 3rem 1rem;
+  border-radius: 20px;
+  color: white;
+  position: relative;
+}
+
+/* Image Styling */
+.ImageContainer {
+  flex: 0 0 35%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ImageContainer img {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 30px;
+  border: 1px solid #00c6ff;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Styling */
+.TextContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.TextContainer .Paragraph {
+  font-size: 1.15rem;
+  line-height: 1.3;
+  font-weight: 500;
+  width: 100%;
+  height: auto;
+  color: var(--Heading-Text);
+  font-family: "Open Sans", serif;
+}
+
+.TextContainer h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--heading-3-color);
+  font-family: "League Spartan", serif;
+}
+
+.Designation {
+  font-family: "Bricolage Grotesque", serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--Header-AcherTags);
+}
+
+/* Discord Icon */
+
+.SocialMedia p {
+  font-size: 1.08rem;
+  font-weight: 500;
+  color: var(--testimonial-para);
+  font-family: "Nunito", serif;
+}
+
+.Buttons {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 5%;
+  justify-content: space-around;
+}
+
+.right,
+.left {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: var(--Heading-Text);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.fadeIn {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+
+.fadeOut {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+@media screen and (min-width: 1951px) {
+  .Main {
+    margin: 5% 0;
+  }
+  .ImageContainer img {
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 3px solid #00c6ff;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .TextContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .TextContainer .Paragraph {
+    font-size: 1.7rem;
+    line-height: 1.3;
+    font-weight: 500;
+    width: 100%;
+    height: auto;
+    color: var(--Heading-Text);
+  }
+
+  .TextContainer h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--heading-3-color);
+  }
+
+  .Designation {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--Header-AcherTags);
+  }
+
+  /* Discord Icon */
+
+  .SocialMedia p {
+    font-size: 1.35rem;
+    font-weight: 500;
+    color: var(--testimonial-para);
+  }
+
+  .Buttons {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+
+  .right,
+  .left {
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: var(--Heading-Text);
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1950px) and (min-width: 1441px) {
+  .Main {
+    margin: 4% 0;
+  }
+  .ImageContainer img {
+    width: 19rem;
+    height: 19rem;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 2px solid #00c6ff;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .TextContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .TextContainer .Paragraph {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    font-weight: 500;
+    width: 100%;
+    height: auto;
+    color: var(--Heading-Text);
+  }
+
+  .TextContainer h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--heading-3-color);
+  }
+
+  .Designation {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--Header-AcherTags);
+  }
+
+  /* Discord Icon */
+
+  .SocialMedia p {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--testimonial-para);
+  }
+
+  .Buttons {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+
+  .right,
+  .left {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--Heading-Text);
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1069px) {
+  .Main {
+    margin: 4% 0;
+  }
+  .ImageContainer img {
+    width: 16rem;
+    height: 16rem;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 1px solid #00c6ff;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .TextContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .TextContainer .Paragraph {
+    font-size: 1.08rem;
+    line-height: 1.3;
+    font-weight: 500;
+    width: 100%;
+    height: auto;
+    color: var(--Heading-Text);
+  }
+
+  .TextContainer h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--heading-3-color);
+  }
+
+  .Designation {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--Header-AcherTags);
+  }
+
+  /* Discord Icon */
+
+  .SocialMedia p {
+    font-size: 1.08rem;
+    font-weight: 500;
+    color: var(--testimonial-para);
+  }
+
+  .Buttons {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+
+  .right,
+  .left {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: var(--Heading-Text);
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1068px) and (min-width: 834px) {
+  .Main {
+    margin: 3% 0;
+  }
+  .ImageContainer img {
+    width: 13rem;
+    height: 13rem;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 1px solid #00c6ff;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .TextContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .TextContainer .Paragraph {
+    font-size: 0.9rem;
+    line-height: 1.35;
+    font-weight: 500;
+    width: 100%;
+    height: auto;
+    color: var(--Heading-Text);
+  }
+
+  .TextContainer h3 {
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: var(--heading-3-color);
+  }
+
+  .Designation {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--Header-AcherTags);
+  }
+
+  /* Discord Icon */
+
+  .SocialMedia p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--testimonial-para);
+  }
+
+  .Buttons {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+
+  .right,
+  .left {
+    font-size: 1rem;
+    font-weight: bolder;
+    color: var(--Heading-Text);
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 833px) and (min-width: 735px) {
+  .Main {
+    margin: 4% 0;
+  }
+  .ImageContainer img {
+    width: 11rem;
+    height: 11rem;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 1px solid #00c6ff;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .TextContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .TextContainer .Paragraph {
+    font-size: 0.85rem;
+    line-height: 1.3;
+    font-weight: 500;
+    width: 100%;
+    height: auto;
+    color: var(--Heading-Text);
+  }
+
+  .TextContainer h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--heading-3-color);
+  }
+
+  .Designation {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--Header-AcherTags);
+  }
+
+  /* Discord Icon */
+
+  .SocialMedia p {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--testimonial-para);
+  }
+
+  .Buttons {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+
+  .right,
+  .left {
+    font-size: 1rem;
+    font-weight: bolder;
+    color: var(--Heading-Text);
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Main {
+    margin: 10% 0;
+  }
+  .Container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .ImageContainer {
+    width: 100%;
+    height: auto;
+  }
+
+  .ImageContainer img {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .TextContainer {
+    text-align: center;
+    gap: 1.2rem;
+  }
+
+  .TextContainer .Paragraph {
+    font-size: 3vw;
+  }
+
+  .TextContainer h3 {
+    font-size: 4vw;
+  }
+
+  .Designation {
+    font-size: 2.5vw;
+    font-weight: 500;
+    color: var(--Header-AcherTags);
+  }
+
+  .SocialMedia p {
+    font-size: 2.5vw;
+    font-weight: 500;
+    color: var(--testimonial-para);
+  }
+
+  .Buttons {
+    justify-content: space-around;
+  }
+
+  .left,
+  .right {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 734px) and (min-width: 481px) {
+  .Main {
+    margin: 10% 0;
+  }
+  .Container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .ImageContainer {
+    width: 100%;
+    height: auto;
+  }
+
+  .ImageContainer img {
+    width: 28rem;
+    height: 28rem;
+  }
+
+  .TextContainer {
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .TextContainer .Paragraph {
+    font-size: 3.3vw;
+  }
+
+  .TextContainer h3 {
+    font-size: 5vw;
+  }
+
+  .Designation {
+    font-size: 3.5vw;
+    font-weight: 500;
+    color: var(--Header-AcherTags);
+  }
+
+  .SocialMedia p {
+    font-size: 3vw;
+    font-weight: 500;
+    color: var(--testimonial-para);
+  }
+
+  .Buttons {
+    justify-content: space-around;
+  }
+
+  .left,
+  .right {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .Main {
+    margin: 10% 0;
+  }
+  .Container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .ImageContainer {
+    width: 100%;
+    height: auto;
+  }
+
+  .ImageContainer img {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .TextContainer {
+    text-align: center;
+    gap: 0.6rem;
+  }
+
+  .TextContainer .Paragraph {
+    font-size: 4vw;
+  }
+
+  .TextContainer h3 {
+    font-size: 5.5vw;
+  }
+
+  .Designation {
+    font-size: 3.7vw;
+    font-weight: 500;
+    color: var(--Header-AcherTags);
+  }
+
+  .SocialMedia p {
+    font-size: 3.5vw;
+    font-weight: 500;
+    color: var(--testimonial-para);
+  }
+
+  .Buttons {
+    justify-content: space-around;
+  }
+
+  .left,
+  .right {
+    font-size: 5vw;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .Main {
+    margin: 10% 0;
+  }
+  .Container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .ImageContainer {
+    width: 100%;
+    height: auto;
+  }
+
+  .ImageContainer img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .TextContainer {
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .TextContainer .Paragraph {
+    font-size: 3.7vw;
+  }
+
+  .TextContainer h3 {
+    font-size: 5.6vw;
+  }
+
+  .Designation {
+    font-size: 3.8vw;
+    font-weight: 500;
+    color: var(--Header-AcherTags);
+  }
+
+  .SocialMedia p {
+    font-size: 3.6vw;
+    font-weight: 500;
+    color: var(--testimonial-para);
+  }
+
+  .Buttons {
+    justify-content: space-around;
+  }
+
+  .left,
+  .right {
+    font-size: 5vw;
+  }
+}

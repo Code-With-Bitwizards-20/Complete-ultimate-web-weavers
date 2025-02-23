@@ -1,0 +1,266 @@
+.Main {
+  width: 100%;
+  height: auto;
+  margin: 5% 0;
+}
+
+/*! STYLINF FOR CONTENT WRAPPER  */
+.ContentWrapper {
+  max-width: 1920px;
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  text-align: center;
+  padding: 2% 0;
+}
+
+.Container .heading {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 3rem;
+  color: var(--Heading-Text);
+  text-shadow: 0 0 8px #33cc33, 0 0 16px #66ff66, 0 0 24px #99ff99;
+}
+
+.CardsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media screen and (min-width: 1951px) {
+  .Main {
+    margin: 5% 0;
+  }
+  .Container {
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+    text-align: center;
+    padding: 2% 0;
+  }
+
+  .Container .heading {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-size: 4rem;
+    color: var(--Heading-Text);
+    text-shadow: 0 0 15px #33cc33, 0 0 25px #66ff66, 0 0 35px #99ff99;
+  }
+
+  .CardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+/* Styles for screens between 1950px and 1441px */
+@media screen and (max-width: 1950px) and (min-width: 1441px) {
+  .Main {
+    margin: 4% 0;
+  }
+  .Container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    text-align: center;
+    padding: 2% 0;
+  }
+
+  .Container .heading {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    color: var(--Heading-Text);
+    text-shadow: 0 0 13px #33cc33, 0 0 23px #66ff66, 0 0 33px #99ff99;
+  }
+
+  .CardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* Styles for screens between 1440px and 1068px */
+@media screen and (max-width: 1440px) and (min-width: 1068px) {
+  .Main {
+    margin: 4% 0;
+  }
+  .Container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    text-align: center;
+    padding: 2% 0;
+  }
+
+  .Container .heading {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-size: 3rem;
+    color: var(--Heading-Text);
+    text-shadow: 0 0 8px #33cc33, 0 0 16px #66ff66, 0 0 24px #99ff99;
+  }
+
+  .CardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* Styles for screens between 1067px and 834px */
+@media screen and (max-width: 1067px) and (min-width: 834px) {
+  .Main {
+    margin: 3% 0;
+  }
+  .Container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    text-align: center;
+    padding: 2% 0;
+  }
+
+  .Container .heading {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-size: 2.2rem; 
+    color: var(--Heading-Text);
+    text-shadow: 0 0 10px #33cc33, 0 0 20px #66ff66, 0 0 30px #99ff99;
+  }
+
+  .CardsContainer {
+    display: grid;
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); 
+    gap: 1rem; 
+  }
+}
+
+@media screen and (max-width: 833px) and (min-width: 768px) {
+  .Main {
+    margin: 4% 0;
+  }
+  .Container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    padding: 2% 0;
+  }
+
+  .Container .heading {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-size: 1.7rem; 
+    color: var(--Heading-Text);
+    text-shadow: 0 0 10px #33cc33, 0 0 20px #66ff66, 0 0 30px #99ff99;
+  }
+
+  .CardsContainer {
+    display: grid;
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); 
+    gap: 1rem; 
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 481px) {
+  .Main {
+    margin: 10% 0;
+  }
+  .Container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+    padding: 4% 0;
+  }
+
+  .Container .heading {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-size: 7vw; 
+    color: var(--Heading-Text);
+    text-shadow: 0 0 10px #33cc33, 0 0 20px #66ff66, 0 0 30px #99ff99;
+  }
+
+  .CardsContainer {
+    display: grid;
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); 
+    gap: 1.5rem; 
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .Main {
+    margin: 10% 0;
+  }
+  .Container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    padding: 4% 0;
+  }
+
+  .Container .heading {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-size: 7vw; 
+    color: var(--Heading-Text);
+    text-shadow: 0 0 10px #33cc33, 0 0 20px #66ff66, 0 0 30px #99ff99;
+  }
+
+  .CardsContainer {
+    display: grid;
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); 
+    gap: 1.2rem;
+  }
+}
+@media screen and (max-width: 319px) {
+  .Main {
+    margin: 10% 0;
+  }
+  .Container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    text-align: center;
+    padding: 4% 0;
+  }
+
+  .Container .heading {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-size: 7vw;
+    color: var(--Heading-Text);
+    text-shadow: 0 0 10px #33cc33, 0 0 20px #66ff66, 0 0 30px #99ff99;
+  }
+
+  .CardsContainer {
+    display: grid;
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); 
+    gap: 1rem; 
+  }
+}

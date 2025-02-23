@@ -1,0 +1,304 @@
+.Main {
+  width: 100%;
+  height: auto;
+  margin: 5% 0;
+}
+
+/*! STYLINF FOR CONTENT WRAPPER  */
+.ContentWrapper {
+  max-width: 1920px;
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--Heading-Text);
+  text-align: center;
+}
+
+.Container h2 {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
+}
+
+.CardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.Card {
+  padding: 5% 0;
+}
+.UlContainer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+ul li {
+  list-style-type: none;
+  font-family: "Bricolage Grotesque", serif;
+}
+
+.Card {
+  background: linear-gradient(135deg, #6a0dad, #1e90ff);
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.95);
+  font-size: 1.05rem;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (min-width: 1951px) {
+  .Main {
+    margin: 5% 0;
+  }
+  .Container {
+    gap: 2rem;
+  }
+  .Container h2 {
+    font-size: 3rem;
+    text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.8);
+  }
+
+  .CardContainer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.7rem;
+  }
+
+  .Card {
+    padding: 5% 0;
+    font-size: 1.25rem;
+    box-shadow: 0 5px 12px rgba(255, 255, 255, 0.4);
+  }
+
+  .Card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 18px rgba(255, 255, 255, 0.6);
+  }
+}
+
+@media screen and (max-width: 1950px) and (min-width: 1441px) {
+  .Main {
+    margin: 4% 0;
+  }
+  .Container {
+    gap: 2rem;
+  }
+
+  .Container h2 {
+    font-size: 2.7rem;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+  }
+
+  .CardContainer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .Card {
+    padding: 5% 0;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.35);
+  }
+
+  .Card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.5);
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1069px) {
+  .Main {
+    margin: 4% 0;
+  }
+  .Container {
+    gap: 1.7rem;
+  }
+
+  .Container h2 {
+    font-size: 2.5rem;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
+  }
+
+  .CardContainer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+
+  .Card {
+    padding: 5% 0;
+    font-size: 1.05rem;
+    box-shadow: 0 3px 8px rgba(255, 255, 255, 0.3);
+  }
+
+  .Card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 12px rgba(255, 255, 255, 0.45);
+  }
+}
+
+@media screen and (max-width: 1068px) and (min-width: 834px) {
+  .Main {
+    margin: 3% 0;
+  }
+  .Container {
+    gap: 1.5rem;
+  }
+
+  .Container h2 {
+    font-size: 2.3rem;
+    text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.6);
+  }
+
+  .CardContainer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .Card {
+    padding: 6% 0;
+    font-size: 0.8rem;
+    box-shadow: 0 3px 7px rgba(255, 255, 255, 0.25);
+  }
+
+  .Card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.4);
+  }
+}
+
+@media screen and (max-width: 833px) and (min-width: 768px) {
+  .Main {
+    margin: 4% 0;
+  }
+  .Container {
+    gap: 1.3rem;
+  }
+
+  .Container h2 {
+    font-size: 2rem;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+  }
+
+  .CardContainer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.9rem;
+  }
+
+  .Card {
+    padding: 7% 0;
+    font-size: 0.72rem;
+    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.2);
+  }
+
+  .Card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 9px rgba(255, 255, 255, 0.35);
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 481px) {
+  .Main {
+    margin: 13% 0;
+  }
+  .Container {
+    gap: 1.5rem;
+  }
+
+  .Container h2 {
+    font-size: 2.1rem;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+  }
+
+  .CardContainer {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  .Card {
+    padding: 6% 0;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+  }
+
+  .Card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 8px rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .Main {
+    margin: 13% 0;
+  }
+  .Container {
+    gap: 1.3rem;
+  }
+
+  .Container h2 {
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.4);
+  }
+
+  .CardContainer {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.9rem;
+  }
+
+  .Card {
+    padding: 5% 0;
+    font-size: 0.8rem;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.15);
+  }
+
+  .Card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.25);
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .Main {
+    margin: 13% 0;
+  }
+  .Container {
+    gap: 1.3rem;
+  }
+
+  .Container h2 {
+    font-size: 1.3rem;
+    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.4);
+  }
+
+  .CardContainer {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.9rem;
+  }
+
+  .Card {
+    padding: 6% 0;
+    font-size: 0.7rem;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.15);
+  }
+
+  .Card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.25);
+  }
+}
